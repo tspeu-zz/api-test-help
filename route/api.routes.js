@@ -2,10 +2,12 @@
 var express = require('express')
 
 var router = express.Router()
-var menus = require('./menu.routes')
+var menu = require('./menu.routes')
+var data = require('./data.routes')
 
 
-router.use('/menu', menus);
+router.use('/menu', menu);
+router.use('/data', data);
 
 
 module.exports = router;
