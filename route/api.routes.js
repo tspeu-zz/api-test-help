@@ -7,7 +7,7 @@ var data = require('./data.routes')
 
 
 router.use('/menu', menu);
-router.use('/data', data);
+router.use('/ayuda',data);
 
 
 module.exports = router;

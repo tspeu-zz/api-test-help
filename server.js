@@ -3,6 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const config = require('./config');
 const bluebird = require('bluebird');
+const path = require('path');
 
 // Get the API route ...
 const api = require('./route/api.routes');

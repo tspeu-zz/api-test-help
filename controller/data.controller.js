@@ -1,7 +1,7 @@
 const Data = require('../model/data.model.js');
 
 exports.create = (req, res) => { 
-
+    // const url = req.protocol + '://' + req.get('host');
     if(!req.body) {
         return res.status(400).send({
             message: "Menu content can not be empty"
@@ -19,6 +19,7 @@ exports.create = (req, res) => {
         hasImagenPrincipal: req.body.hasImagenPrincipal || false,
         ImagenPrincipalURL: req.body.imagenPrincipalURL || "",
         imagenPrincipal: req.body.imagenPrincipal,  
+        //  imagePath:    url + "/images/" + req.file.filename,
     
         parrafo: req.body.parrafo,
         isEdit: req.body.isEdit || false
